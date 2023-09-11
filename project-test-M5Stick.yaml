@@ -6,6 +6,7 @@ substitutions:
     device_description: RFID Eingangskontrolle
     mqtt_prefix: ESPhome_M5STICKC_Whg1_Eingangskontrolle
   ##############
+
   
   
 esphome:

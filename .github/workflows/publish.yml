@@ -13,3 +13,4 @@ jobs:
       files: project-test-M5Stick.yaml
       # CHANGEME: Set the name of your project here:
       name: M5Stick-test
+
