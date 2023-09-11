@@ -1,6 +1,6 @@
 # About
 
-First ESPhome Test with CI build pipeline
+First ESPhome Test with CI build pipeline.
 
 # Installation
 
