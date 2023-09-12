@@ -1,6 +1,6 @@
 # About
 
-Add some information about your project here.
+First ESPhome Test with CI build pipeline.
 
 # Installation
 
