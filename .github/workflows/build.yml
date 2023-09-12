@@ -1,0 +1,32 @@
+---
+name: Build
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - 'esphome/**'
+  push:
+    paths:
+      - '.github/workflows/**'
+      - 'esphome/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Install setuptools
+        run: sudo apt install python3-setuptools
+      - name: Install requirements
+        run: sudo make requirements
+        working-directory: esphome
+      - name: Lint YAML files
+        run: |
+          cp secrets.yaml.example secrets.yaml
+          LANG=C.UTF-8 make lint
+        working-directory: esphome
+      - name: Build code
+        run: LANG=C.UTF-8 make build
+        working-directory: esphome
