@@ -83,6 +83,8 @@ wifi:
     ssid: !secret wifi_ssid
     password: !secret wifi_password
     fast_connect: true
+    id: wifi_id
+    power_save_mode: HIGH
   
     ap:
       ssid: "M5Stack-Core2 Fallback Hotspot"
@@ -227,6 +229,20 @@ binary_sensor:
   - platform: status
     id: api_connected
     internal: true
+  # Button implementation
+  - platform: gpio
+    name: Button
+    pin:
+      number: GPIO41
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    filters:
+      - delayed_off: 10ms
+    on_press:
+      then:
+        - logger.log: Button Pressed
 
 switch:
   - platform: axp192
