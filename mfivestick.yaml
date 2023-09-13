@@ -195,6 +195,11 @@ output:
    output: ldo3
    id: axp_ldo3
 
+#G4=IR
+remote_transmitter:
+  pin: GPIO4
+  carrier_duty_percent: 50%
+
 # internal LED
 light: # internal LED
  - platform: monochromatic
