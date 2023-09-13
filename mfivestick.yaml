@@ -229,11 +229,11 @@ binary_sensor:
   - platform: status
     id: api_connected
     internal: true
-  # Button implementation
+  # Button A implementation
   - platform: gpio
     name: Button
     pin:
-      number: GPIO41
+      number: GPIO37
       inverted: true
       mode:
         input: true
