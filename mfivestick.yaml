@@ -31,14 +31,6 @@ external_components: #include homething, and esphome-components
     refresh: 0s
     components: [axp192]
 
-#  - source:
-#      type: git
-      #url: https://gitlab.com/geiseri/esphome_extras.git
-      #url: https://gitlab.com/geiseri/esphome_extras/-/tree/main/components
-#    refresh: 0s
-#    components: [axp192]
-
-
   #packages: # These allow merging whereas global includes do not
   #  common_sensors: !include /config/esphome/custom_components/common_sensors.yaml # Includes number, text and binary
   
