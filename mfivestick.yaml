@@ -221,7 +221,8 @@ binary_sensor:
   - platform: status
     id: api_connected
     internal: true
-  # Button A implementation
+  
+    # Button A implementation
   - platform: gpio
     name: Button
     pin:
@@ -229,7 +230,7 @@ binary_sensor:
       inverted: true
       mode:
         input: true
-        pullup: true
+        pullup: false
     filters:
       - delayed_off: 10ms
     on_press:
