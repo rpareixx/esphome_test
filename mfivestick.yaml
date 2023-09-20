@@ -272,6 +272,6 @@ display:
     reset_pin: GPIO18
     update_interval: 60s
     lambda: |
-        it.print(42, -24, id(font1), id(color_wet), TextAlign::TOP_CENTER, "W");
-        it.print(42, 32, id(font1), id(color_wet), TextAlign::TOP_CENTER, "E");
-        it.print(42, 85, id(font1), id(color_wet), TextAlign::TOP_CENTER, "T");
+        it.print(42, -24, id(font1), id(color_wet), TextAlign::TOP_CENTER, "D");
+        it.print(42, 32, id(font1), id(color_wet), TextAlign::TOP_CENTER, "R");
+        it.print(42, 85, id(font1), id(color_wet), TextAlign::TOP_CENTER, "Y");
