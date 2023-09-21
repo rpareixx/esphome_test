@@ -1,3 +1,5 @@
+[![GitHub release][release-shield]][release-url]
+[![GitHub Last Commit][last-commit-shield]][commits-url]
 
 # About
 
