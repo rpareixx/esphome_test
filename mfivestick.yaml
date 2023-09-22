@@ -247,10 +247,10 @@ switch:
     name: "${friendly_name} Restart"
         
 
-font:
-  - file: "fonts/OpenSans-Regular.ttf"
-    id: font1
-    size: 66
+#font:
+#  - file: "fonts/OpenSans-Regular.ttf"
+#    id: font1
+#    size: 66
 
 color:
     - id: color_wet
@@ -263,15 +263,15 @@ color:
       blue: 0%
 
 # built-in 80x160 TFT
-display:
-  - platform: st7789v
-    model: TTGO_TDisplay_135x240
-    rotation: 0
-    cs_pin: GPIO5
-    dc_pin: GPIO23
-    reset_pin: GPIO18
-    update_interval: 60s
-    lambda: |
-        it.print(42, -24, id(font1), id(color_wet), TextAlign::TOP_CENTER, "D");
-        it.print(42, 32, id(font1), id(color_wet), TextAlign::TOP_CENTER, "R");
-        it.print(42, 85, id(font1), id(color_wet), TextAlign::TOP_CENTER, "Y");
+#display:
+#  - platform: st7789v
+#    model: TTGO_TDisplay_135x240
+#    rotation: 0
+#    cs_pin: GPIO5
+#    dc_pin: GPIO23
+#    reset_pin: GPIO18
+#    update_interval: 60s
+#    lambda: |
+#        it.print(42, -24, id(font1), id(color_wet), TextAlign::TOP_CENTER, "D");
+#        it.print(42, 32, id(font1), id(color_wet), TextAlign::TOP_CENTER, "R");
+#        it.print(42, 85, id(font1), id(color_wet), TextAlign::TOP_CENTER, "Y");
